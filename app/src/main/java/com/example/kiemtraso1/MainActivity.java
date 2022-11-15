@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String password ="admin";
                 if(edtUserName.getText().toString().equals(username) && edtPassWord.getText().toString().equals(password)){
                     Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_LONG).show();
-                    Intent i = new Intent(MainActivity.this, List.class);
+                    Intent i = new Intent(MainActivity.this, ListVire.class);
                     startActivity(i);
                 }
                 else{

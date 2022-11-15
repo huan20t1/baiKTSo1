@@ -17,7 +17,7 @@ public class AdapterList extends BaseAdapter {
     private List<singer> arraylist;
     private int layout;
 
-    public AdapterList(Context context, int layout, ArrayList<AdapterList> arraylist) {
+    public AdapterList(Context context, int layout, ArrayList<singer> arraylist) {
         this.context = context;
         this.layout = layout;
         this.arraylist = arraylist;
