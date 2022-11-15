@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradiant"
+            android:layout_marginBottom="100px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="WELCOME!"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:layout_marginTop="100px"
+                android:layout_marginBottom="100px"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="207dp"
+                android:layout_height="219dp"
+                app:srcCompat="@drawable/logog"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eduser"
+            android:layout_width="268dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50px"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textPersonName"
+            android:hint="Email or Username"
+            android:gravity="center"
+            android:textColor="#838383" />
+
+        <EditText
+            android:id="@+id/edpass"
+            android:layout_width="268dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColor="#838383" />
+
+        <CheckBox
+            android:id="@+id/savedn"
+            android:layout_width="167dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:text="Ghi nhớ đăng nhập"
+            android:layout_marginTop="30px"/>
+
+        <Button
+            android:id="@+id/dn"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:backgroundTint="#245CBC"
+            android:fontFamily="sans-serif-medium"
+            android:text="LOGIN" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Forgot password?"
+            android:layout_marginTop="100px"
+            android:layout_gravity="center"
+            android:textColor="#008EFF" />
+
+        <LinearLayout
+
+            android:layout_width="163dp"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="New account?" />
+
+            <TextView
+                android:id="@+id/txtsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sign up"
+                android:textColor="#008EFF" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
